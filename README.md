@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pontusab/message-ui/main/apps/web/public/og.png" alt="Message UI — Dynamic message attachments" width="100%" />
+  <img src="./apps/web/public/og.png" alt="Message UI — Dynamic message attachments" width="100%" />
 </p>
 
 # Message UI
