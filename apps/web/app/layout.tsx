@@ -13,13 +13,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
+
 export const metadata: Metadata = {
-  title: "Message UI — Dynamic chat attachments",
+  metadataBase: new URL(siteUrl),
+  title: "Message UI — Dynamic message attachments",
   description:
-    "Build rich chat attachments with React. Develop locally and export PNGs for iMessage, WhatsApp, and more from the same template.",
+    "Build rich message attachments with React. Develop locally and export PNGs for iMessage, WhatsApp, and more from the same template.",
   openGraph: {
     title: "Message UI",
-    description: "Build rich chat attachments with React.",
+    description: "Dynamic message attachments built with React.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Message UI",
+    description: "Dynamic message attachments built with React.",
   },
 };
 
