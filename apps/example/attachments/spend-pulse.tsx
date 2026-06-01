@@ -34,16 +34,8 @@ function SpendPulseImpl({
 }: SpendPulseProps) {
   return (
     <Tailwind style={{ backgroundColor: "#120d0a" }}>
-      <Attachment
-        style={stageStyle(
-          "radial-gradient(circle at bottom right, rgba(251, 146, 60, 0.14), transparent 32%), #120d0a",
-        )}
-      >
-        <Section
-          style={surfaceStyle(
-            "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 100%)",
-          )}
-        >
+      <Attachment style={stageStyle("#120d0a")}>
+        <Section style={surfaceStyle("rgba(255,255,255,0.02)")}>
           <Section style={{ gap: 18 }}>
             <Row style={{ justifyContent: "space-between", alignItems: "center", width: "100%" }}>
               <Text style={eyebrowStyle}>Weekly spend pulse</Text>

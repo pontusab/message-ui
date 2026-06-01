@@ -36,16 +36,8 @@ function GateChangeImpl({
 }: GateChangeProps) {
   return (
     <Tailwind style={{ backgroundColor: "#0d0f14" }}>
-      <Attachment
-        style={stageStyle(
-          "radial-gradient(circle at top right, rgba(96, 165, 250, 0.12), transparent 28%), #0d0f14",
-        )}
-      >
-        <Section
-          style={surfaceStyle(
-            "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.012) 100%)",
-          )}
-        >
+      <Attachment style={stageStyle("#0d0f14")}>
+        <Section style={surfaceStyle("rgba(255,255,255,0.02)")}>
           <Section style={{ gap: 18 }}>
             <Row style={{ justifyContent: "space-between", alignItems: "center", width: "100%" }}>
               <Text style={eyebrowStyle}>Travel update</Text>

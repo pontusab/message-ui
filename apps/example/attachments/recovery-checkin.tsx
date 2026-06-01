@@ -34,16 +34,8 @@ function RecoveryCheckinImpl({
 }: RecoveryCheckinProps) {
   return (
     <Tailwind style={{ backgroundColor: "#0a1010" }}>
-      <Attachment
-        style={stageStyle(
-          "radial-gradient(circle at top right, rgba(45, 212, 191, 0.12), transparent 30%), #0a1010",
-        )}
-      >
-        <Section
-          style={surfaceStyle(
-            "linear-gradient(180deg, rgba(255,255,255,0.028) 0%, rgba(255,255,255,0.012) 100%)",
-          )}
-        >
+      <Attachment style={stageStyle("#0a1010")}>
+        <Section style={surfaceStyle("rgba(255,255,255,0.02)")}>
           <Section style={{ gap: 18 }}>
             <Row style={{ justifyContent: "space-between", alignItems: "center", width: "100%" }}>
               <Text style={eyebrowStyle}>Recovery check-in</Text>

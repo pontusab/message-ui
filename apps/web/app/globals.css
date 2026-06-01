@@ -12,6 +12,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-pixel: var(--font-geist-pixel-line);
 }
 
 body {
@@ -27,10 +28,6 @@ body {
     linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 56px 56px;
   opacity: 0.9;
-}
-
-.hero-bg-fade {
-  background: radial-gradient(ellipse 85% 55% at 50% -10%, rgba(24, 24, 27, 0.5) 0%, transparent 55%);
 }
 
 .code-panel {

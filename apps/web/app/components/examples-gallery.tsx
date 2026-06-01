@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import deliveryWindow from "../../../example/out/delivery-window.png";
-import gateChange from "../../../example/out/gate-change.png";
-import recoveryCheckin from "../../../example/out/recovery-checkin.png";
-import spendPulse from "../../../example/out/spend-pulse.png";
+import deliveryWindow from "../../examples/delivery-window.png";
+import gateChange from "../../examples/gate-change.png";
+import recoveryCheckin from "../../examples/recovery-checkin.png";
+import spendPulse from "../../examples/spend-pulse.png";
 
 const EXAMPLES = [
   {
@@ -38,7 +38,7 @@ export function ExamplesGallery() {
       {EXAMPLES.map((example) => (
         <div
           key={example.file}
-          className="overflow-hidden rounded-xl border border-white/6 bg-white/2"
+          className="overflow-hidden border border-white/6 bg-white/2"
         >
           <div className="border-b border-white/6 px-4 py-3">
             <div className="font-mono text-[11px] text-zinc-500">{example.file}</div>
@@ -46,7 +46,7 @@ export function ExamplesGallery() {
             <p className="mt-1 text-sm leading-relaxed text-zinc-400">{example.description}</p>
           </div>
           <div className="border-b border-white/6 bg-[#09090a] p-4">
-            <div className="overflow-hidden rounded-md border border-white/6 bg-black/20">
+            <div className="overflow-hidden border border-white/6 bg-black/20">
               <Image
                 src={example.image}
                 alt={example.title}

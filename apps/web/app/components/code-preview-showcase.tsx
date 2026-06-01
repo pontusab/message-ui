@@ -68,17 +68,17 @@ export function CodePreviewShowcase() {
         </p>
       </div>
 
-      <div className="code-panel overflow-hidden rounded-xl border border-white/8 bg-[#0c0c0e]">
+      <div className="code-panel overflow-hidden border border-white/8 bg-[#0c0c0e]">
         {/* File + style tabs — react.email pattern */}
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/6 px-3 py-2 sm:px-4">
           <div className="flex items-center gap-1 font-mono text-xs">
-            <span className="rounded-md bg-white/6 px-2.5 py-1 text-zinc-300">order-card.tsx</span>
+            <span className="bg-white/6 px-2.5 py-1 text-zinc-300">order-card.tsx</span>
           </div>
-          <div className="flex rounded-md border border-white/8 bg-black/40 p-0.5">
+          <div className="flex border border-white/8 bg-black/40 p-0.5">
             <button
               type="button"
               onClick={() => setStyleTab(TAILWIND_TAB)}
-              className={`rounded px-3 py-1.5 text-xs font-medium transition ${
+              className={`px-3 py-1.5 text-xs font-medium transition ${
                 styleTab === TAILWIND_TAB
                   ? "bg-white/10 text-white"
                   : "text-zinc-500 hover:text-zinc-300"
@@ -89,7 +89,7 @@ export function CodePreviewShowcase() {
             <button
               type="button"
               onClick={() => setStyleTab(INLINE_TAB)}
-              className={`rounded px-3 py-1.5 text-xs font-medium transition ${
+              className={`px-3 py-1.5 text-xs font-medium transition ${
                 styleTab === INLINE_TAB
                   ? "bg-white/10 text-white"
                   : "text-zinc-500 hover:text-zinc-300"
@@ -114,9 +114,8 @@ export function CodePreviewShowcase() {
               <span className="text-xs font-medium text-zinc-500">Preview</span>
             </div>
             <div className="preview-frame relative flex flex-1 items-center justify-center overflow-hidden bg-[#0a0a0a] p-6 md:p-10">
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(39,39,42,0.35)_0%,transparent_65%)]" />
               <div
-                className="relative w-full max-w-[320px] rounded-2xl border border-white/10 bg-[#18181b] p-6 shadow-2xl"
+                className="relative w-full max-w-[320px] border border-white/10 bg-[#18181b] p-6"
                 style={{ boxShadow: "0 25px 50px -12px rgba(0,0,0,0.6)" }}
               >
                 <p className="text-xl font-semibold text-white">Your order</p>

@@ -11,7 +11,7 @@ export function CapabilityStrip() {
       {ITEMS.map((item) => (
         <div
           key={item.label}
-          className="rounded-lg border border-white/6 bg-white/2 px-4 py-3 text-left"
+          className="border border-white/6 bg-white/2 px-4 py-3 text-left"
         >
           <div className="font-mono text-[11px] text-zinc-500">{item.label}</div>
           <div className="mt-1 text-sm font-medium text-zinc-200">{item.value}</div>

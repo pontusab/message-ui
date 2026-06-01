@@ -35,16 +35,8 @@ function DeliveryWindowImpl({
 }: DeliveryWindowProps) {
   return (
     <Tailwind style={{ backgroundColor: "#0b120d" }}>
-      <Attachment
-        style={stageStyle(
-          "radial-gradient(circle at top left, rgba(74, 222, 128, 0.14), transparent 32%), #0b120d",
-        )}
-      >
-        <Section
-          style={surfaceStyle(
-            "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.015) 100%)",
-          )}
-        >
+      <Attachment style={stageStyle("#0b120d")}>
+        <Section style={surfaceStyle("rgba(255,255,255,0.02)")}>
           <Section style={{ gap: 18 }}>
             <Row style={{ justifyContent: "space-between", alignItems: "center", width: "100%" }}>
               <Text style={eyebrowStyle}>Delivery window</Text>
