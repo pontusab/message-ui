@@ -48,7 +48,7 @@
     },
     "packages/cli": {
       "name": "@message-ui/cli",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "bin": {
         "message-ui": "./dist/cli.js",
       },
@@ -61,7 +61,7 @@
     },
     "packages/components": {
       "name": "@message-ui/components",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "devDependencies": {
         "@types/react": "^19.2.15",
         "react": "^19.2.6",
@@ -73,7 +73,7 @@
     },
     "packages/preview": {
       "name": "@message-ui/preview",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "dependencies": {
         "@message-ui/render": "workspace:*",
         "esbuild": "^0.28.0",
@@ -91,7 +91,7 @@
     },
     "packages/render": {
       "name": "@message-ui/render",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "dependencies": {
         "@fontsource/inter": "^5.2.8",
         "@resvg/resvg-js": "^2.6.2",
@@ -108,7 +108,7 @@
     },
     "packages/tailwind": {
       "name": "@message-ui/tailwind",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "devDependencies": {
         "@types/react": "^19.2.15",
         "react": "^19.2.6",

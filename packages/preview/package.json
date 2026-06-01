@@ -1,8 +1,16 @@
 {
   "name": "@message-ui/preview",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Local preview server for Message UI attachment templates.",
+  "license": "MIT",
+  "author": "pontusab",
+  "homepage": "https://github.com/pontusab/message-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pontusab/message-ui.git",
+    "directory": "packages/preview"
+  },
   "type": "module",
-  "private": true,
   "sideEffects": false,
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -11,6 +19,12 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
