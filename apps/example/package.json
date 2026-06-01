@@ -1,0 +1,22 @@
+{
+  "name": "example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "bun run ../../packages/cli/src/cli.ts export --dir ./attachments --out ./out",
+    "dev": "bun run ../../packages/cli/src/cli.ts dev --dir ./attachments --port 3333 --export ./out",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@message-ui/components": "workspace:*",
+    "@message-ui/preview": "workspace:*",
+    "@message-ui/render": "workspace:*",
+    "@message-ui/tailwind": "workspace:*",
+    "react": "^19.2.6"
+  },
+  "devDependencies": {
+    "@message-ui/cli": "workspace:*",
+    "@types/react": "^19.2.15",
+    "typescript": "^6.0.3"
+  }
+}

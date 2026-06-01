@@ -1,0 +1,20 @@
+{
+  "name": "@message-ui/cli",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "message-ui": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "message-ui": "bun run ./src/cli.ts"
+  },
+  "dependencies": {
+    "@message-ui/preview": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

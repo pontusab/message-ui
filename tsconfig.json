@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/render" },
+    { "path": "./packages/components" },
+    { "path": "./packages/tailwind" },
+    { "path": "./packages/preview" },
+    { "path": "./packages/cli" },
+    { "path": "./apps/example" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "message-ui-monorepo",
+  "private": true,
+  "packageManager": "bun@1.3.14",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "postinstall": "bun run build",
+    "build": "bun run build:render && bun run build:components && bun run build:tailwind && bun run build:preview && bun run build:cli",
+    "build:render": "bun run --cwd packages/render build",
+    "build:components": "bun run --cwd packages/components build",
+    "build:tailwind": "bun run --cwd packages/tailwind build",
+    "build:preview": "bun run --cwd packages/preview build",
+    "build:cli": "bun run --cwd packages/cli build",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "check": "biome check --write .",
+    "typecheck": "bun run typecheck:render && bun run typecheck:components && bun run typecheck:tailwind && bun run typecheck:preview && bun run typecheck:cli && bun run typecheck:example",
+    "typecheck:render": "bun run --cwd packages/render typecheck",
+    "typecheck:components": "bun run --cwd packages/components typecheck",
+    "typecheck:tailwind": "bun run --cwd packages/tailwind typecheck",
+    "typecheck:preview": "bun run --cwd packages/preview typecheck",
+    "typecheck:cli": "bun run --cwd packages/cli typecheck",
+    "typecheck:example": "bun run --cwd apps/example typecheck",
+    "example:render": "bun run --cwd apps/example render",
+    "example:dev": "bun run --cwd apps/example dev",
+    "dev:web": "bun run --cwd apps/web dev",
+    "build:web": "bun run --cwd apps/web build",
+    "message-ui": "bun run --cwd packages/cli message-ui"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.16",
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.15",
+    "typescript": "^6.0.3"
+  }
+}
